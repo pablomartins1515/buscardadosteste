@@ -1,7 +1,7 @@
 import {CheckCircle, Lock} from 'phosphor-react'
 import { isPast, format} from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 
 
 interface LessonProps {
@@ -18,7 +18,7 @@ export function Lesson (props: LessonProps) {
     })
 
     return (
-    <Link to={`/blogpage/post/${props.slug}`} className='group'>
+    <NavLink to={`/blogpage/post/${props.slug}`} className='group'>
          <span className="text-gray-300">
             {availableDateFormatted}
         </span>
@@ -46,7 +46,6 @@ export function Lesson (props: LessonProps) {
                 {props.title}
             </strong>
         </div>
-    </Link> 
-
+    </NavLink> 
     )        
 }

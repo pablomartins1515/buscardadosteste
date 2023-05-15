@@ -21,6 +21,6 @@ export function Post () {
             </main>
 
             <Rodape />                       
-        </div>    
-    )        
+        </div>   
+    )       
 }

@@ -1,5 +1,3 @@
-import { SkipBack } from "phosphor-react"
-import { NavLink } from "react-router-dom"
 import { Rodape } from "../componentes/Rodape"
 import { Header } from "../componentes/Header"
 

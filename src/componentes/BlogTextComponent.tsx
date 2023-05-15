@@ -6,7 +6,7 @@ interface BlogTextComponentProps {
 }
 
 const BlogTextComponent: React.FC<BlogTextComponentProps> = ({ html }) => {
-  return <div>{html ? ReactHtmlParser(html) : null}</div>;
+  return <div>{html !== null && html !== undefined ? ReactHtmlParser(html) : null}</div>;
 };
 
 export default BlogTextComponent;

@@ -33,19 +33,19 @@ export function MainBlog(props: VideoProps) {
               {data.lesson.title}
             </h1>
             <div>
-              <p className="text-lg mb-7 text-gray-700">
+              <div className="text-lg mb-7 text-gray-700">
                 <BlogTextComponent html={data.lesson.blogtext?.html} />
-              </p>
+              </div>
             </div>
             <div>
-              <p className="text-3xl mb-4 text-gray-600">
+              <div className="text-3xl mb-4 text-gray-600">
                 <strong>
                   <BlogTextComponent html={data.lesson.subtext2} />
                 </strong>
-              </p>
-              <p className="text-lg mb-10">
+              </div>
+              <div className="text-lg mb-10">
                 <BlogTextComponent html={data.lesson.blogtext2?.html} />
-              </p>
+              </div>
             </div>
             <div className="flex items-center pl-8 pr-8">
               <div className="h-full border-l-4 border-blue-900 mr-4">
@@ -58,8 +58,8 @@ export function MainBlog(props: VideoProps) {
               </div>
             </div>
             <div>
-              <p className="text-3xl mb-4 mt-10 text-gray-600">
-              </p>
+              <div className="text-3xl mb-4 mt-10 text-gray-600">
+              </div>
               <span className="text-lg mb-6">
                 <BlogTextComponent html={data.lesson.blogtext3?.html} />
               </span>
@@ -68,21 +68,21 @@ export function MainBlog(props: VideoProps) {
               <Pesquisador />
             </span>
             <div>
-              <p className="text-3xl mb-4 mt-12 text-gray-600">
+              <div className="text-3xl mb-4 mt-12 text-gray-600">
                 <strong>
                   <BlogTextComponent html={data.lesson.subtext4} />
                 </strong>
-              </p>
+              </div>
               <span className="text-lg mb-6">
                 <BlogTextComponent html={data.lesson.blogtext4?.html} />
               </span>
             </div>
             <div>
-              <p className="text-3xl mb-4 text-gray-600">
+              <div className="text-3xl mb-4 text-gray-600">
                 <strong>
                   <BlogTextComponent html={data.lesson.subtext5} />
                 </strong>
-              </p>
+              </div>
               <span className="text-lg mb-6">
                 <BlogTextComponent html={data.lesson.blogtext5?.html} />
               </span>
@@ -96,9 +96,9 @@ export function MainBlog(props: VideoProps) {
               </div>
             </div>
             <div>
-              <p className="text-xl mt-8 mb-12 text-gray-500 leading-relaxed">
+              <div className="text-xl mt-8 mb-12 text-gray-500 leading-relaxed">
                 <span>{data.lesson.description}</span>
-              </p>
+              </div>
             </div>            
             {data.lesson.teacher && (
               <div className="flex items-center gap-4 mt-6">
