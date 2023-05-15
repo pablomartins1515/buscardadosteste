@@ -1,5 +1,4 @@
 import { FormEvent, useState } from "react";
-import ConsultaPlaca from "./Pesquisador";
 
 export function Buttonplaceh() {
 
